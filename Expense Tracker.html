@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./Expense tracker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div id="expense-form">
+            <input type="date" id="date" placeholder="Date">
+            <input type="text" id="category" placeholder="Category">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <div id="expense-list">
+            <!-- Expenses will be dynamically added here -->
+        </div>
+        <div id="total-expense">
+            Total Expense: $<span id="total-amount">0.00</span>
+        </div>
+    </div>
+
+    <script src="./Expense Tracker.js"></script>
+</body>
+</html>
